@@ -1,0 +1,20 @@
+{
+  "name": "mi-evento-magico",
+  "version": "1.0.0",
+  "description": "Esta es tu web para que tus evitados puedan visualizar tu evento de una manera eficiente y bonita",
+  "homepage": "https://github.com/Dashrod77/Mi-evento-magico#readme",
+  "bugs": {
+    "url": "https://github.com/Dashrod77/Mi-evento-magico/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dashrod77/Mi-evento-magico.git"
+  },
+  "license": "MIT",
+  "author": "Oziel Elias Rodriguez Gonzalez, Suri Evelyn Gallegos Cruz",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

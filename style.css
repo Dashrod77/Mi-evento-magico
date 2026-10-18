@@ -1,0 +1,11 @@
+.labels_IncioSesion article{
+  border: 5px;
+  border-color: aqua;
+}
+.labels_IncioSesion h1{
+  color: red;
+}
+.labels_IncioSesion a{
+  display: inline-block;
+  
+}

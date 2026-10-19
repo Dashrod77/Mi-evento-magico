@@ -94,6 +94,7 @@ app.post('/api/auth/login', async (req, res) => {
         id: usuario.id,
         nombre: usuario.nombre,
         email: usuario.email,
+        rol: usuario.rol,
       },
     });
   } catch (error) {

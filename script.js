@@ -1,6 +1,7 @@
 const form = document.getElementById("form");
-
+if(form){
 form.addEventListener("submit", captura);
+}
 
 async function captura(event) {
   event.preventDefault();
@@ -22,8 +23,19 @@ async function captura(event) {
     }
 
     localStorage.setItem("token", data.token);
-    window.location.href = "Mi_evento_magico.html";
-  } catch (error) {
+    localStorage.setItem("rol", data.usuario.rol);
+    if(data.usuario.rol == "admin") {
+      window.location.href = "panel_administracion.html";
+    }
+    else if(data.usuario.rol === "usuario"){
+      window.location.href = "Mi_evento_magico.html";
+    }else {
+      console.error("Este acceso es solo para administradores y organizadores");
+      localStorage.removeItem("token");
+      localStorage.removeItem("rol");
+      console.log("respuesta: ",data);
+    }
+  }catch(error){
     console.error(error);
   }
 }
